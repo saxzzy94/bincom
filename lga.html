@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"
+		/>
+		<title>LGA RESULT</title>
+	</head>
+	<body>
+		<main class="container">
+			<!-- Nav -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">LGA RESULT</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="./index.html">Polling Unit Results </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./lga.html"
+								>LGA Results<span class="sr-only">(current)</span></a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<!-- Table -->
+			<div class="input-group mb-3 mt-5">
+				<div class="input-group-prepend">
+					<label class="input-group-text" for="inputGroupSelect01"
+						>Select LGA</label
+					>
+				</div>
+				<select class="custom-select" id="lga"></select>
+				<table class="table" id="lga-table">
+					<thead>
+						<tr>
+							<th scope="col">polling Units</th>
+							<th scope="col">Results</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</main>
+		<script src="./lga/lga.js"></script>
+	</body>
+</html>
